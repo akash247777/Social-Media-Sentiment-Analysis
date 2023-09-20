@@ -1,0 +1,12 @@
+import numpy as np
+import re
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from sklearn.preprocessing import LabelEncoder
+# Read Data
+df = pd.read_csv('F:\\downloads\\training.1600000.processed.noemoticon.csv', header=None, encoding='latin')
+df.columns = ['label', 'id', 'date', 'query', 'user', 'tweet']
+
+# Data reduction
+print(df)
